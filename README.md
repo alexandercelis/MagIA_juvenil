@@ -1,4 +1,4 @@
-### Notas y ejercicios del curso MagIA Juvenil
+### *Notas y ejercicios del curso MagIA Juvenil*
 
 
 
