@@ -3,7 +3,7 @@ var person = {
         lastName: "Guerrero",
         age: 32
     }
-    //La descoposisción permite almacenar las caracteristicas del objeto
+    //La descomposición permite almacenar las caracteristicas del objeto
     //.. en variables independientes para accesar a ellas más facilmente
 var { firstName, lastName } = person;
 console.log("The name of participant is:  " + firstName + " " + lastName)
@@ -47,6 +47,7 @@ let { nombreN2, apellido: apellidoN3 = "Lopez" } = persona2
 console.log("El nombre es: " + nombreN2 + " " + apellidoN3);
 
 //Descomposición en funciones *********************
+//↓↓↓
 var envio = {
     numEnvio: "325",
     producto: "videojuego"
@@ -54,7 +55,7 @@ var envio = {
 
 datoEnvio(envio);
 //↓Se pone en {} como en las otras descomposiciones
-function datoEnvio({ numEnvio, producto }) {
-    console.log("Número de envio: " + numEnvio);
+function datoEnvio({ numEnvio, producto }) { //Sí se pasan las caracteristicas de un objeto como parametro de una function 
+    console.log("Número de envio: " + numEnvio); // .. se descompone pues se pueden usar como variables individuales
     console.log("Producto a enviar: " + producto);
 }

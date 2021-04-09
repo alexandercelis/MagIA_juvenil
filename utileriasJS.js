@@ -8,19 +8,27 @@ exports.numRandom = () => { // extorts.nameFuncion permite a todos los archivos 
 }
 
 // nameString.length → cantidad de caracteres de un string
-// nameString.indexOf(texto) → muestra el index de la primera aparaición en la cadena,si no esta retorna 0
-
 var texto = "hola como estas?";
-
 console.log(texto.length);
+
+// nameString.indexOf(texto) → muestra el index de la primera aparaición en la cadena,si no esta retorna 0
 console.log(texto.indexOf("e"));
 console.log(texto.indexOf("x"));
 console.log(texto.indexOf("a"));
 
 //nameString.replace(valorSustituir, valorNuevo); → Reemplaza un valor por otro en un String
-// name String.slice(indexInit, IndexEnd); → Extrae parte de un string y lo retorna como un nuevo string
-
 console.log(texto.replace("hola", "HELLO"));
 
+// name String.slice(indexInit, IndexEnd); → Extrae parte de un string y lo retorna como un nuevo string
 var nombre = texto.slice(0, 4);
-console.log(nombre);
+console.log(nombre); //Muestra "hola"
+
+// Convertir String Minus/Mayus
+var stringText = "Why you never alone?"
+console.log(stringText.toUpperCase()) // MAYUS UPPER
+console.log(stringText.toLowerCase()) // MINUS LOWER
+
+// Convatenar Strings 
+var stringText2 = "What the hell?";
+var stringText22 = " men";
+console.log(stringText2.concat(stringText22));
