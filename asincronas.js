@@ -28,7 +28,7 @@ setTimeout(function() {
 }, 4 * 1000);
 
 console.log("Hola a los participantes");
-*/
+
 function primero(callback) {
     setTimeout(function() {
         return callback("Primero");
@@ -45,3 +45,4 @@ primero(function(resultado1) { //
         console.log(resultado2);
     })
 });
+*/
