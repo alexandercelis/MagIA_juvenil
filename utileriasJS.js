@@ -3,10 +3,11 @@ console.log(Math.round(Math.random() * 10));
 //Math.round() → redondea el decimal de random.
 
 //Creamos una función flecha que sera útil para utilizarla varias veces 
-exports.numRandom = () => { // extorts.nameFuncion permite a todos los archivos del mismo folder requerir la utileria
+// extorts.nameFunction permite a todos los archivos del mismo folder requerir la utileria
+function numRandom() {
     return resultado = Math.round(Math.random() * 10);
 }
-
+export { numRandom };
 // nameString.length → cantidad de caracteres de un string
 var texto = "hola como estas?";
 console.log(texto.length);
@@ -28,7 +29,7 @@ var stringText = "Why you never alone?"
 console.log(stringText.toUpperCase()) // MAYUS UPPER
 console.log(stringText.toLowerCase()) // MINUS LOWER
 
-// Convatenar Strings 
+// Concatenar Strings 
 var stringText2 = "What the hell?";
 var stringText22 = " men";
-console.log(stringText2.concat(stringText22));
+console.log(stringText2.concat(stringText22)); // Muestra: "What the hell? men"
